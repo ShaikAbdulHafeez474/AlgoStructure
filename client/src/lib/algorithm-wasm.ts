@@ -126,7 +126,7 @@ export async function performAlgorithmOperation(
 function createMockModule(): AlgorithmModule {
   return {
     _performOperation: () => 0,
-    _getStepCount: () => 5, // Mock 5 steps for each operation
+    _getStepCount: () => 8, // Increase to 8 steps for smoother visualization
     _getCurrentStep: () => 0,
     _getStepData: () => 0,
     _freeStepData: () => {},
