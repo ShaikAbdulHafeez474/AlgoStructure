@@ -22,6 +22,8 @@ const ControlPanel: React.FC = () => {
   const formatComplexity = (complexity: string) => {
     return complexity;
   };
+  
+  const hasValidStep = currentStep && totalSteps > 0;
 
   return (
     <Card className="mt-4">

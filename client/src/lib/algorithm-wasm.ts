@@ -183,12 +183,12 @@ function createBSTStep(operation: AlgorithmOperation, step: number, totalSteps: 
       value, 
       x: 300, 
       y: 300, 
-      highlighted: true 
+      color: '#ff4081' 
     });
     edges.push({ 
       source: '2', 
       target: '5', 
-      highlighted: true 
+      color: '#ff4081' 
     });
   }
   
@@ -196,18 +196,18 @@ function createBSTStep(operation: AlgorithmOperation, step: number, totalSteps: 
   if (operation === 'search') {
     // Mock a search path
     if (step === 1) {
-      nodes[0].highlighted = true; // Root
+      nodes[0].color = '#ff4081'; // Root
     } else if (step === 2) {
-      nodes[0].highlighted = true;
-      nodes[1].highlighted = true;
-      edges[0].highlighted = true;
+      nodes[0].color = '#ff4081';
+      nodes[1].color = '#ff4081';
+      edges[0].color = '#ff4081';
     } else if (step >= 3) {
-      nodes[0].highlighted = false;
-      nodes[1].highlighted = true;
-      edges[0].highlighted = true;
+      nodes[0].color = '#3f51b5';
+      nodes[1].color = '#ff4081';
+      edges[0].color = '#ff4081';
       if (value < 25) {
-        nodes[3].highlighted = true;
-        edges[2].highlighted = true;
+        nodes[3].color = '#ff4081';
+        edges[2].color = '#ff4081';
       }
     }
   }
